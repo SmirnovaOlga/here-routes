@@ -1,0 +1,14 @@
+<ul ng-if="$ctrl.waypoints.length" class="waypoints">
+    <li ng-repeat="result in $ctrl.waypoints" class="waypoints_item">
+        {{result.title}}, {{result.vicinity}}
+        <button ng-click="$ctrl.waypointRemove($index)" class="alert waypoints__button">
+            <i class="fi-trash"></i>
+        </button>
+        <button ng-click="$ctrl.waypointMoveUp($index)" class="waypoints__button">
+            <i class="fi-arrow-up"></i>
+        </button>
+        <button ng-click="$ctrl.waypointMoveDown($index)" class="waypoints__button">
+            <i class="fi-arrow-down"></i>
+        </button>
+    </li>
+</ul>

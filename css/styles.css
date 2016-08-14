@@ -1,0 +1,34 @@
+.search-input {
+    width: 700px !important;
+}
+
+.search-results {
+    position: absolute;
+    margin: 0;
+    padding-left: 10px;
+    list-style: none;
+    z-index: 10;
+    background-color: white;
+    width: 700px;
+    border-color: #999;
+}
+
+.search-results__item {
+    cursor: pointer;
+}
+
+.map__container {
+    position:absolute;
+    width: 90%;
+    height: 70%;
+    background:grey
+}
+
+.waypoints {
+    list-style: none;
+}
+
+.waypoints__button {
+    padding: 0.5rem 1rem;
+}
+

@@ -1,0 +1,9 @@
+<p>
+    <strong>Enter address:</strong><br/>
+    <input type="text" size="40" ng-model="$ctrl.searchValue" name="$ctrl.searchValue" class="search-input" ng-keyup="$ctrl.triggerSearch($ctrl.searchValue)">
+    <ul ng-if="$ctrl.searchResults.length"  class="search-results">
+        <li ng-repeat="result in $ctrl.searchResults" ng-click="$ctrl.selectSearchResult($index)" class="search-results__item">
+            {{result.title}}, {{result.vicinity}}
+        </li>
+    </ul>
+</p>
